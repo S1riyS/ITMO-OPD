@@ -14,7 +14,6 @@
    В качестве корня дерева использовать каталог lab0 своего домашнего каталога.
    Для создания и навигации по дереву использовать команды: mkdir, echo, cat, touch, ls, pwd, cd, more, cp, rm, rmdir,
    mv.
-   
    [![image.png](https://i.postimg.cc/q7Zmmmgh/image.png)](https://postimg.cc/Z9pFnx84)
 
 * Каталоги и файлы первого уровня:
@@ -93,3 +92,96 @@
     покемона GHOST POISON
     ```
 
+2. Установить согласно заданию права на файлы и каталоги при помощи команды `chmod`, используя различные способы указания прав:
+   * glalie4: владелец должен читать файл; группа-владелец должна читать файл; остальные пользователи должны не иметь никаких прав:
+      ```shell
+     [s413732@helios ~/OPD/lab0]$ chmod ug=r glalie4
+     [s413732@helios ~/OPD/lab0]$ chmod o= glalie4
+      ```
+   * gothorita1: r-x--x-w-
+      ```shell
+     [s413732@helios ~/OPD/lab0]$ chmod 512 gothorita1
+      ```
+   * whiscash: права 404
+      ```shell
+     [s413732@helios ~/OPD/lab0]$ chmod 404 gothorita1/whiscash
+      ```
+   * swadloon: владелец должен читать директорию и переходить в нее; 
+     группа-владелец должна читать, записывать директорию и переходить в нее; 
+     остальные пользователи должны читать, записывать директорию и переходить в нее
+      ```shell
+     [s413732@helios ~/OPD/lab0]$ chmod u=rx gothorita1/swadloon
+     [s413732@helios ~/OPD/lab0]$ chmod go=rwx gothorita1/swadloon
+
+      ```
+   * braviary: права 666
+      ```shell
+     [s413732@helios ~/OPD/lab0]$ chmod 666 gothorita1/braviary
+      ```
+   * hippowdon: r-x-wxrwx
+      ```shell
+     [s413732@helios ~/OPD/lab0]$ chmod 537 gothorita1/hippowdon
+      ```
+   * gulpin3: права 700
+      ```shell
+     [s413732@helios ~/OPD/lab0]$ chmod 700 gulpin3
+      ```
+   * piloswine: rw--w----
+      ```shell
+     [s413732@helios ~/OPD/lab0]$ chmod 620 gulpin3/piloswine
+      ```
+   * medicham: r-x--x-w-
+      ```shell
+     [s413732@helios ~/OPD/lab0]$ chmod 512 gulpin3/medicham
+      ```
+   * lilligant: rw--w--w-
+      ```shell
+     [s413732@helios ~/OPD/lab0]$ chmod 622 gulpin3/lilligant
+      ```
+   * prinplup: r--------
+      ```shell
+      [s413732@helios ~/OPD/lab0]$ chmod 400 gulpin3/prinplup
+      ```
+   * kabutops7: права 404
+      ```shell
+      [s413732@helios ~/OPD/lab0]$ chmod 404 kabutops7 
+      ```
+   * nidoqueen3: права 006
+      ```shell
+      [s413732@helios ~/OPD/lab0]$ chmod 006 nidoqueen3
+      ```
+   * serperior2: владелец должен читать директорию и переходить в нее; 
+     группа-владелец должна записывать директорию;
+     остальные пользователи должны читать директорию
+      ```shell
+      [s413732@helios ~/OPD/lab0]$ chmod u=rx serperior2
+      [s413732@helios ~/OPD/lab0]$ chmod g=w serperior2
+      [s413732@helios ~/OPD/lab0]$ chmod o=r serperior2
+      ```
+   * magcargo: владелец должен записывать директорию и переходить в нее; 
+     группа-владелец должна читать, записывать директорию и переходить в нее; 
+     остальные пользователи должны записывать директорию и переходить в нее      
+     ```shell
+      [s413732@helios ~/OPD/lab0]$ chmod u=wx serperior2/magcargo
+      [s413732@helios ~/OPD/lab0]$ chmod g=rwx serperior2/magcargo
+      [s413732@helios ~/OPD/lab0]$ chmod o=wx serperior2/magcargo
+      ```
+   * tentacool: права 551
+      ```shell
+      [s413732@helios ~/OPD/lab0]$ chmod 551 serperior2/tentacool
+      ```
+   * wartortle: права 006
+      ```shell
+      [s413732@helios ~/OPD/lab0]$ chmod 006 serperior2/wartortle
+      ```
+   * pignite: права 571
+      ```shell
+      [s413732@helios ~/OPD/lab0]$ chmod 571 serperior2/pignite
+      ```
+   * gengar: владелец должен читать файл; 
+     группа-владелец должна не иметь никаких прав; 
+     остальные пользователи должны читать файл
+      ```shell
+      [s413732@helios ~/OPD/lab0]$ chmod uo=r serperior2/gengar
+      [s413732@helios ~/OPD/lab0]$ chmod g= serperior2/gengar
+      ```
