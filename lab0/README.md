@@ -14,6 +14,7 @@
    В качестве корня дерева использовать каталог lab0 своего домашнего каталога.
    Для создания и навигации по дереву использовать команды: mkdir, echo, cat, touch, ls, pwd, cd, more, cp, rm, rmdir,
    mv.
+   
    [![image.png](https://i.postimg.cc/q7Zmmmgh/image.png)](https://postimg.cc/Z9pFnx84)
 
 * Каталоги и файлы первого уровня:
